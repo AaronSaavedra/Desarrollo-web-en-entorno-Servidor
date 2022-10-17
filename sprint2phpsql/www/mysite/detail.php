@@ -17,10 +17,10 @@
 		<h3>Comentarios:</h3>
 		<ul>
 			<?php
-				$query2= 'SELECT * FROM tComentarios WHERE libro_id'.$libro_id;
+				$query2= 'SELECT * FROM tComentarios WHERE libro_id='.$libro_id;
 				$result2= mysqli_query($db, $query2) or die ('Query error');
-				while ($row = myssqli_fetch_array($result2)) {
-					echo '<li>'.$row['contraseña'].'</li>';
+				while ($row = mysqli_fetch_array($result2)) {
+					echo '<li>'.$row[1].'</li>';
 				}
 				mysqli_close($db);
 			?>
