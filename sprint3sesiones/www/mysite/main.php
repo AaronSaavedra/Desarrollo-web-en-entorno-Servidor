@@ -9,13 +9,14 @@
 	</style>
 	<body>
 		<h1>Conexión establecida</h1>
-		<table>
+		<a href="/logout.php">Logout</a>	
+	<table>
 			<tr>
 				<th>Id</th>		
 				<th>Nombre</th>
 				<th>Url_Imagen</th>
 				<th>Autor</th>
-				<th>Genero</th>
+					<th>Genero</th>
 			</tr>
 			<?php
 			// Lanzar un query
