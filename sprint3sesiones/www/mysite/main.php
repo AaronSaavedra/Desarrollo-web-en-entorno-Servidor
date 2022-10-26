@@ -14,7 +14,10 @@
 		}
 
 		.Color{
-		background-color:blue;
+			background-color:blue;
+		}
+		tr:hover{
+			background-color:#5DC1B9;
 		}
 
 		.Imagen{
@@ -31,7 +34,7 @@
 			margin: 0 auto;
 
 		}
-		
+
 	</style>
 	<body>
 		<h1>Conexión establecida</h1>
@@ -42,7 +45,7 @@
 				<th class="Color">Nombre</th>
 				<th class="Color">Url_Imagen</th>
 				<th class="Color">Autor</th>
-					<th>Genero</th>
+				<th class="Color">Genero</th>
 			</tr>
 			<?php
 			// Lanzar un query
