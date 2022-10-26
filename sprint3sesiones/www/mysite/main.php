@@ -6,6 +6,26 @@
 		table, th, td{
 			border: 1px solid black;
 		}
+		.tr1:hover{
+			background-color: black;
+		}
+		.id:hover{
+			color:blue;
+		}
+		.imagen{
+			width: 100px;
+			height: 50px;
+			background: #008000;
+			transition: width 2s, height 2s, margin 2s;
+			margin: 50px auto 0;
+		}
+		.imagen:hover{
+			width: 100%;
+			height: 100px;
+			margin: 0 auto;
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
 	</style>
 	<body>
 		<h1>Conexión establecida</h1>
