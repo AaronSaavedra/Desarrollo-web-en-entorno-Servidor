@@ -7,20 +7,17 @@
 			border: 1px solid black;
 			border-collapse: collapse;
 		}
-		.tr1:hover{
-			background-color: blue;
-		}
-		.id:hover{
+		.ID:hover{
 			color:blue;
 		}
-		.imagen{
+		.Imagen{
 			width: 100px;
 			height: 100px;
 			background: #f92672;
 			transition: width 2s, height 2s, margin 2s;
 			margin: 50px auto 0;
 		}
-		.imagen:hover{
+		.Imagen:hover{
 			width: 100%;
 			height: 200px;
 			margin: 0 auto;
@@ -43,10 +40,10 @@
 			$query =  'SELECT * FROM tLibros';
 			$result = mysqli_query($db, $query) or die('Query error');
 			while ($row = mysqli_fetch_array($result)) {
-				echo '<td><a href="/detail.php?id='.$row[0].'">'.$row[0].'</a></td>';
+				echo '<td><a class="ID" href="/detail.php?id='.$row[0].'">'.$row[0].'</a></td>';
 				echo '<tr>';
-				echo '<td>'.$row[1].'</td>';
-				echo '<td><img src="'.$row[2].'" width="100" height="100"></td>';
+				echo '<td class="Nombre">'.$row[1].'</td>';
+				echo '<td><img class="Imagen" src="'.$row[2].'" width="100" height="100"></td>';
 				echo '<td>'.$row[3].'</td>';
 				echo '<td>'.$row[4].'</td>';
 				echo '</tr>';
