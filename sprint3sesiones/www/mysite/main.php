@@ -5,10 +5,17 @@
 	<style>
 		table, th, td{
 			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		.tr1:hover{
+			background-color: blue;
+		}
+		.id:hover{
+			color:blue;
 		}
 		.imagen{
 			width: 100px;
-			height: 50px;
+			height: 100px;
 			background: #f92672;
 			transition: width 2s, height 2s, margin 2s;
 			margin: 50px auto 0;
@@ -17,6 +24,7 @@
 			width: 100%;
 			height: 200px;
 			margin: 0 auto;
+
 		}
 	</style>
 	<body>
