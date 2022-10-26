@@ -7,9 +7,16 @@
 			border: 1px solid black;
 			border-collapse: collapse;
 		}
-		.ID:hover{
-			color:blue;
+		
+		td{
+			padding:15px;
+			text-align:center;
 		}
+
+		.Color{
+		background-color:blue;
+		}
+
 		.Imagen{
 			width: 100px;
 			height: 100px;
@@ -17,22 +24,24 @@
 			transition: width 2s, height 2s, margin 2s;
 			margin: 50px auto 0;
 		}
+
 		.Imagen:hover{
 			width: 100%;
 			height: 200px;
 			margin: 0 auto;
 
 		}
+		
 	</style>
 	<body>
 		<h1>Conexión establecida</h1>
 		<a href="/logout.php">Logout</a>	
 	<table>
 			<tr>
-				<th>Id</th>		
-				<th>Nombre</th>
-				<th>Url_Imagen</th>
-				<th>Autor</th>
+				<th class="Color">Id</th>		
+				<th class="Color">Nombre</th>
+				<th class="Color">Url_Imagen</th>
+				<th class="Color">Autor</th>
 					<th>Genero</th>
 			</tr>
 			<?php
