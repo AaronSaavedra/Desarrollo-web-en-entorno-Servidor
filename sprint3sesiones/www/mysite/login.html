@@ -2,25 +2,26 @@
 	<head>
 		<meta charset="UTF-8">
 		<script>
-			document.addEventListener("DOMContentLoaded", function(){
-				document.getElementById("Formulario").addEventListener('submit',validarFormulario);
-			});
-
+			document.addEventListener("DOMContentLoaded", function() {
+			document.getElementById("Formulario").addEventListener('submit', validarFormulario); 
+		});
+	
 			function validarFormulario(evento) {
-				evento.preventDefault();
-				var email = document.getElementById('e-mail').value;
-				if(email.length == 0){
-					alert('No has escrito en el apartado email');
-					return;
-				}
-				var contraseña = document.getElementById('Contraseña').value;
-				if(contraseña.length < 0){
-					alert('La contraseña introducida no es valida');
-					return;
-				}
-				this.submit();
+			evento.preventDefault();
+			var email = document.getElementById('email').value;
+			if(email.length == 0) {
+				alert('No has escrito nada en el email');
+				return;
 			}
+			var contraseña = document.getElementById('Contraseña').value;
+			if (contraseña.length < 4) {
+				alert('La Contraseña no es válida');
+				return;
+			}
+			this.submit();
+		}
 		</script>
+	</head>
 	</head>
 	<body>
 		<h1>Login</h1>
