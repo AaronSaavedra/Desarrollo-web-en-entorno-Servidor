@@ -10,12 +10,12 @@
 			evento.preventDefault();
 			var email = document.getElementById('email').value;
 			if(email.length == 0) {
-				alert('No has escrito nada en el email');
+				alert('No has introducido ningún email');
 				return;
 			}
 			var contraseña = document.getElementById('Contraseña').value;
-			if (contraseña.length < 4) {
-				alert('La Contraseña no es válida');
+			if (contraseña.length < 0) {
+				alert('No has introducido ninguna contraseña');
 				return;
 			}
 			this.submit();
